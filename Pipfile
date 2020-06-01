@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+pandas = "*"
+numpy = "*"
+scikit-learn = "*"
+scipy = "*"
+matplotlib = "*"
+ipython = "*"
+jupyter = "*"
+sympy = "*"
+nose = "*"
+statsmodels = "*"
+seaborn = "*"
+pandas-datareader = "*"
+torch = "*"
+torchvision = "*"
+
+[requires]
+python_version = "3.7"
