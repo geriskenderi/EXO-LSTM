@@ -20,6 +20,7 @@ seaborn = "*"
 pandas-datareader = "*"
 torch = "*"
 torchvision = "*"
+pmdarima = "*"
 
 [requires]
 python_version = "3.7"
