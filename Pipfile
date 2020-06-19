@@ -21,6 +21,7 @@ pandas-datareader = "*"
 torch = "*"
 torchvision = "*"
 pmdarima = "*"
+stldecompose = "*"
 
 [requires]
 python_version = "3.7"
