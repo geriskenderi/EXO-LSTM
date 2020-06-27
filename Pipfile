@@ -23,6 +23,7 @@ statsmodels = "==0.10.2"
 stldecompose = "*"
 pmdarima = "==1.5.3"
 plotly = "==4.8.1"
+pandas-profiling = "*"
 
 [requires]
 python_version = "3.7"
