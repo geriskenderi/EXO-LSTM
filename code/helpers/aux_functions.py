@@ -85,6 +85,7 @@ def cols_with_sig_pval(df, forecast_target_col=0, sig_lvl=0.05, lag=0):
     pval_matrix = calculate_pvalues(df, lag)
     corrmat_row = pval_matrix.iloc[forecast_target_col, :]
     corrmat_row_vals = corrmat_row.values.tolist()
+    print(corrmat_row_vals)
     # Get only the columns that have statistically significant correlation
     correlated_features = []
     for idx, val in enumerate(corrmat_row_vals):

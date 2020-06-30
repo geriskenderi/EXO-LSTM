@@ -7,6 +7,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
+from matplotlib import pyplot as plt
 
 
 class Model(nn.Module):
@@ -16,8 +17,10 @@ class Model(nn.Module):
         self.hidden_size = hidden_size
         self.output_size = output_size
         self.lstm = nn.LSTMCell(self.input_size, self.hidden_size)
+        #self.lstm = nn.LSTMCell(self.hidden_size, self.hidden_size)
         self.linear = nn.Linear(self.hidden_size, self.output_size)
 
+    ## N-in N-out
     def forward(self, input, future=0, y=None):
         outputs = []
 
@@ -42,6 +45,34 @@ class Model(nn.Module):
             outputs += [output]
         outputs = torch.stack(outputs, 1)
         return outputs
+
+    def predict_mono(self,input,future=0,y=0):
+        outputs = []
+    
+        # reset the state of LSTM
+        # the state is kept till the end of the sequence
+        h_t = torch.zeros(input.size(0), self.hidden_size, dtype=torch.float32)
+        c_t = torch.zeros(input.size(0), self.hidden_size, dtype=torch.float32)
+
+        for i, input_t in enumerate(input.chunk(input.size(1), dim=1)):
+            h_t, c_t = self.lstm(input_t.squeeze(1), (h_t, c_t))
+            output = self.linear(h_t)
+
+            outputs += [output]
+        
+        for i in range(future):
+            if output.dim()<3:
+                output=output.unsqueeze(1)
+
+            # Input for sales becomes the sales from the last step, but the real values are used for the exogenous variables
+            output=torch.cat([output[:,:,:1], y[:,i,1:].unsqueeze(1)],dim=2)
+            h_t, c_t = self.lstm(output.squeeze(1), (h_t, c_t))
+            output = self.linear(h_t)
+            outputs += [output]
+        outputs = torch.stack(outputs, 1)
+        return outputs
+
+    
 
 class Optimization:
     """ A helper class to train, test and diagnose the LSTM"""
@@ -68,7 +99,7 @@ class Optimization:
         y_train,
         x_val=None,
         y_val=None,
-        batch_size=12,
+        batch_size=100,
         n_epochs=100,
         do_teacher_forcing=None,
     ):
