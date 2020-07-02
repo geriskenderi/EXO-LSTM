@@ -3,4 +3,5 @@ material/
 code/LSTM_TRANSF
 code/.ipynb_checkpoints
 datasets/
+writing/
 Pipfile.lock

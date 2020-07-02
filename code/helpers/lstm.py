@@ -17,7 +17,6 @@ class Model(nn.Module):
         self.hidden_size = hidden_size
         self.output_size = output_size
         self.lstm = nn.LSTMCell(self.input_size, self.hidden_size)
-        #self.lstm = nn.LSTMCell(self.hidden_size, self.hidden_size)
         self.linear = nn.Linear(self.hidden_size, self.output_size)
 
     ## N-in N-out
