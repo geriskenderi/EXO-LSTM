@@ -2,6 +2,9 @@
 material/
 code/LSTM_TRANSF
 code/.ipynb_checkpoints
-datasets/
+datasets/dati_nunalie
+datasets/Eso_data
+datasets/Protocol_data
 writing/
 Pipfile.lock
+.ipynb_checkpoints

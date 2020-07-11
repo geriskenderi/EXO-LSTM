@@ -1,5 +1,5 @@
 # Thesis Project:
-Repository for my M.Sc. thesis work on TIme Series Forecasting, using different algorithms and exogenous data.
+Repository with code from my M.Sc. thesis: Statistical forecasting with exogenous factors using Long Short-Term Memory machines
 
 ## Table of contents
 - [Thesis Project:](#thesis-project)
