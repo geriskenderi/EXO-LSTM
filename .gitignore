@@ -1,5 +1,6 @@
 .DS_Store
 material/
+code/data_preproc
 code/LSTM_TRANSF
 code/.ipynb_checkpoints
 datasets/dati_nunalie
