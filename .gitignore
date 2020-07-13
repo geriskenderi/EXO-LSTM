@@ -1,7 +1,8 @@
 .DS_Store
 material/
 code/data_preproc
-code/LSTM_TRANSF
+code/data_preproc/
+code/LSTM_TRANSF/
 code/.ipynb_checkpoints
 datasets/dati_nunalie
 datasets/Eso_data
