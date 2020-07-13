@@ -1,8 +1,8 @@
-# Thesis Project:
-Repository with code from my M.Sc. thesis: Statistical forecasting with exogenous factors using Long Short-Term Memory machines
+# Statistical forecasting with exogenous factors using Long Short-Term Memory machines:
+Repository with the code created during my M.Sc. thesis research
 
 ## Table of contents
-- [Thesis Project:](#thesis-project)
+- [Statistical forecasting with exogenous factors using Long Short-Term Memory machines:](#statistical-forecasting-with-exogenous-factors-using-long-short-term-memory-machines)
   - [Table of contents](#table-of-contents)
   - [Getting started](#getting-started)
     - [Prerequisites](#prerequisites)
