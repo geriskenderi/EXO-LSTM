@@ -1,5 +1,5 @@
 # Statistical forecasting with exogenous factors using Long Short-Term Memory machines:
-Repository with the code created during my M.Sc. thesis research
+Code developed during my M.Sc. thesis research, containing the data-driven framework on temporal and weather encodings for the LSTM architecture, known as EXO-LSTM.
 
 ## Table of contents
 - [Statistical forecasting with exogenous factors using Long Short-Term Memory machines:](#statistical-forecasting-with-exogenous-factors-using-long-short-term-memory-machines)
