@@ -1,5 +1,5 @@
 # Statistical forecasting with exogenous factors using Long Short-Term Memory machines:
-Repository with the code created during my M.Sc. thesis research
+Code developed during my M.Sc. thesis research, containing a data-driven framework for sales forecasting, that uses exogenous temporal and weather encodings.
 
 ## Table of contents
 - [Statistical forecasting with exogenous factors using Long Short-Term Memory machines:](#statistical-forecasting-with-exogenous-factors-using-long-short-term-memory-machines)
