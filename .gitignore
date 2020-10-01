@@ -10,3 +10,4 @@ datasets/Protocol_data
 writing/
 Pipfile.lock
 .ipynb_checkpoints
+.idea
