@@ -1,13 +1,5 @@
-import random
-import math
-import time
-import pandas as pd
-import numpy as np
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
-import torch.optim as optim
-from matplotlib import pyplot as plt
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu") # Set up CUDA
 
 class LSTM(nn.Module):
