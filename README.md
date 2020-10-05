@@ -58,7 +58,7 @@ The code itself is well documented and should hopefully be understandable.
 #### Daily average over all datasets
 |MONO-LSTM RMSE | EXO1-LSTM RMSE | EXO2-LSTM RMSE | EXO3-LSTM RMSE | MONO-LSTM SMAPE | EXO1-LSTM SMAPE | EXO2-LSTM SMAPE	| EXO3-LSTM SMAPE|
 |:---------------|:---------------|:---------------|:---------------|:----------------|:----------------|:----------------|:---------------|
-| 78.939295 | 77.743218 | 78.640198 | **74.617212** | 20.434304 | 20.191111 | 20.191111| 20.683091 | **18.928351** |
+| 78.939295 | 77.743218 | 78.640198 | **74.617212** | 20.434304 | 20.191111 | 20.683091 | **18.928351** |
 
 ## Future Work
 1. **Different exogenous data**: Very interesting ones would be the use of visual features or textual features deriving from social media. This would be particularly useful for e-commerce.
