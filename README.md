@@ -62,5 +62,5 @@ The code itself is well documented and should hopefully be understandable.
 
 ## Future Work
 1. **Different exogenous data**: Very interesting ones would be the use of visual features or textual features deriving from social media. This would be particularly useful for e-commerce.
-2. **Other model architectures**: While this work focuses on "singular" approaches and mostly on the LSTM, it can be interesting to see how ensemble methods or different neural network architectures would perform.2. 
-3. **Automatic feature extraction**: I believe that another great thing to consider would be automating this process by having a way to extract meaningful features from the multivariate time series. This way the whole data analysis could be bypassed in a sense. This could be achieved by using a CNN, so an architecture like a ConvLSTM could be a very interesting idea going forward.
+2. **Other model architectures**: While this work focuses on "singular" approaches and mostly on the LSTM, it can be interesting to see how ensemble methods or different neural network architectures would perform. 
+3. **Automatic feature extraction**: I believe that another great thing to consider would be automating this process by having a way to extract meaningful features from the multivariate time series. This way the whole data analysis could be bypassed in a certain sense. Multi-modal forecasting is a big trend right now in forecasting research.
